@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,11 +12,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#080c14",
+};
+
 export const metadata: Metadata = {
   title: "Claude Code Unpacked",
   description:
     "What actually happens when you type a message into Claude Code? The agent loop, 50+ tools, multi-agent orchestration, and unreleased features — mapped straight from the source.",
-  themeColor: "#080c14",
   keywords: ["Claude Code", "Anthropic", "AI agent", "agent loop", "tools", "source code"],
 };
 
