@@ -1,0 +1,7 @@
+[install]
+# Use bun's fast Rust-based installer
+auto = "force"
+
+[run]
+# Silence bun warnings about missing bun.lockb
+bun = true
